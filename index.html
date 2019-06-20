@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import ptsJs, Tone.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pts/0.8.3/pts.min.js" integrity="sha256-qhzf+GMjGz9XLt6KEZsyabo6oJ7tPy+ODYOoTQ73JYc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.8.12/Tone.min.js" integrity="sha256-dkaO/q/8qkzLcxzcFH2BrIltvicuMNsmB6+ppG7dCY8=" crossorigin="anonymous"></script>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    
+  </head>  
+  <body>
+    <canvas id="visualization"></canvas>  
+    
+    <div class="playback">
+      <button id="whiteNoiseButton">
+        ▶️
+      </button>
+      <button id="pinkNoiseButton">
+        ▶️
+      </button>
+      <button id="brownNoiseButton">
+        ▶️
+      </button>
+    </div>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
